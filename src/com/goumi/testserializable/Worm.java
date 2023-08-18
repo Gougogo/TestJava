@@ -44,7 +44,8 @@ public class Worm implements Serializable {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         Worm w = new Worm(6, 'a');
         System.out.println("w=" + w);
-        ObjectOutputStream out = new ObjectOutputStream(
+        String s;
+        /*ObjectOutputStream out = new ObjectOutputStream(
                 new FileOutputStream("worm.out")
         );
         out.writeObject(w);
@@ -56,8 +57,9 @@ public class Worm implements Serializable {
                 new FileInputStream("worm.out")
         );
         Worm w2 = (Worm) in.readObject();
-        String s = (String)in.readObject();
-        System.out.println(s+"w2 = " +w2);
+        s = (String)in.readObject();
+        System.out.println(s+"w2 = " +w2);*/
+
 
         ByteArrayOutputStream bout = new ByteArrayOutputStream();
         ObjectOutputStream out2 = new ObjectOutputStream(bout);

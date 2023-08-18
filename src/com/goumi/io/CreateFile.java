@@ -32,8 +32,9 @@ public class CreateFile {
             fileInputStream.close();
         }
     }
+
     @Test
     public void writeFile(){
-
+        System.out.println("asdasd");
     }
 }

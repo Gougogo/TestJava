@@ -23,5 +23,16 @@ public class StringTest {
             System.out.println("== false");
         }
 
+        StaticTest staticTest = new StaticTest();
+        staticTest.test();
+        StaticTest.test();
+
+    }
+}
+
+class StaticTest{
+    public static int num = 522;
+    public static void test(){
+        System.out.println("asd");
     }
 }

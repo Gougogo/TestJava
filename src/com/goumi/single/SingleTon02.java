@@ -15,6 +15,9 @@ public class SingleTon02 {
         System.out.println((double) (Runtime.getRuntime().totalMemory()) / (1024 * 1024 * 1024));
 
         new Cat();
+        Cat asd;
+
+        Cat instance = Cat.getInstance("asd");
     }
 }
 

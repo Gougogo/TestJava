@@ -19,5 +19,10 @@ public class test2 {
         System.out.println(b == b.intern());
 
         StringBuffer stringBuffer = new StringBuffer();
+
+        String test1 = "asd";
+        String test2 = "asd";
+        System.out.println(test1.compareTo(test2));
+
     }
 }

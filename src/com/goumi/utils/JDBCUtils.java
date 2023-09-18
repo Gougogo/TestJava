@@ -15,6 +15,22 @@ public class JDBCUtils {
     private static String url;
     private static String driver;
 
+    public static String getUser() {
+        return user;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+    public static String getUrl() {
+        return url;
+    }
+
+    public static String getDriver() {
+        return driver;
+    }
+
     static {
         Properties properties = new Properties();
         try {

@@ -2,9 +2,7 @@ package com.goumi.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 /**
@@ -32,5 +30,19 @@ public class JDBCUtils {
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, user, password);
+    }
+
+    public static void close(ResultSet set, Statement statement, Connection connection) throws SQLException {
+        if (set != null){
+            set.close();
+        }
+
+        if (statement != null){
+            statement.close();
+        }
+
+        if (connection != null){
+            connection.close();
+        }
     }
 }

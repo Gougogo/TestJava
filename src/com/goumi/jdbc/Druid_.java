@@ -30,5 +30,8 @@ public class Druid_ {
         while (resultSet.next()){
             System.out.println(resultSet.getString(1));
         }
+        connection.close();
+        show_tables.close();
+        resultSet.close();
     }
 }

@@ -23,6 +23,7 @@ public class Generic01 {
 
         int num = 123456;
 
+
         System.out.println(Integer.reverse(num));
     }
 
